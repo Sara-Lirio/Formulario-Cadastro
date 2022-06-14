@@ -89,6 +89,9 @@ button {
     border-radius: 3em;
     font-size: 1em;
     font-weight: 700;
+    background-color: #3f9ad3;
+    color: white;
+    border: none
 }
 
 span {
