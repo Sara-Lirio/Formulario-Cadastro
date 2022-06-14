@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./_variaveis.css">
+    <link rel="stylesheet" href="./botao.css">
+    <link rel="stylesheet" href="./form.css">
     <title>Cadastro</title>
 
 </head>
@@ -18,50 +21,78 @@
         <section class="cadastro">
             <form>
                 <div id="divCadastro" class="cadastro-dados">
-
-                    <label for="" id="nome">Nome Completo</label>
-                    <input type="text" id="nome" required>
-                    <div class="campoCPFeCel">
-                        <label class='cpf' for="">CPF</label>
-                        <input class='cpf' type="" id="cpf" required>
-                        <label class='cel' for="">Celular</label>
-                        <input class='cel' type="tel">
-                    </div>
-                    <div class="campoNascimentoeCEP">
-                        <label for="">Data de Nascimento</label>
-                        <input type="date" id="nascimento" class="nascimento">
-                        <label for="">CEP</label>
-                        <input class="cep" type="text">
-                    </div>
-                    <label for="">Endereço</label>
-                    <input type="text">
-                    <div class="campoEndereco">
-                        <label for="">Cidade</label>
-                        <input class='cidade' type="text">
-                        <label for="">Estado</label>
-                        <input class='estado' type="text">
-                    </div>
-                    <label for="" id="email">Email</label>
-                    <input type="email" required>
-                    <label for="" id="senha">Senha</label>
-                    <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
-                        title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
-                        data-tipo="dataNascimento" required>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="" id="nome">Nome Completo</label>
+                            <input type="text" id="nome">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label class="cpf" for="cpf">CPF</label>
+                            <input class='cpf' type="" id="cpf">
+                        </div>
+                        <div class="input-container">
+                            <label class='cel' for="">Celular</label>
+                            <input class='cel' type="tel">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="">Data de Nascimento</label>
+                            <input type="date" id="nascimento" class="nascimento">
+                        </div>
+                        <div class="input-container">
+                            <label for="">CEP</label>
+                            <input class="cep" type="text">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="">Endereço</label>
+                            <input type="text">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="">Cidade</label>
+                            <input class='cidade' type="text">
+                        </div>
+                        <div class="input-container">
+                            <label for="">Estado</label>
+                            <input class='estado' type="text">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="" id="email">Email</label>
+                            <input type="email">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <label for="" id="senha">Senha</label>
+                            <input type="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
+                                title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
+                                data-tipo="dataNascimento">
+                        </div>
                 </div>
-                <input type="checkbox" class="checkbox">
-                <span>Aceito receber comunicações do Easypay por WhatsApp</span><br>
+                <div>
+                    <input type="checkbox" class="checkbox">
+                    <legend>Aceito receber comunicações por WhatsApp.</legend><br>
 
-                <input type="checkbox">
-                <span>Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento,
-                    quando aplicável, conforme descrito nesta Política de Privacidade.</span> <br>
-
+                    <input type="checkbox">
+                    <legend>Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu
+                        consentimento,
+                        quando aplicável, conforme descrito nesta Política de Privacidade.</legend> <br>
+                </div>
                 <button id="enviar">Cadastrar</button>
             </form>
         </section>
-
     </main>
-    <script src="./app.js" type="module"></script>
-  
+    <script src="./main.js"></script>
+
 </body>
 
 </html>

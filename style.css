@@ -14,7 +14,6 @@ main {
 .principal,
 .cadastro {
     width: 50%;
-    
 }
 
 .principal {
@@ -23,12 +22,8 @@ main {
     background-size: cover;
 }
 
-h1, label, span, input, button, p{
-    font-family: 'Mulish', sans-serif
-}
-
-p{
-    color: gray;
+h1, label, legend, input, button, p{
+    font-family: var(--fonte-principal);
 }
 
 h1 {
@@ -37,63 +32,4 @@ h1 {
     margin: 2em;
 }
 
-form {
-    margin: 1.5em 4.5em 0 6em;
-   
-}
 
-.campoCPFeCel, .campoNascimentoeCEP, .campoEndereco{
-    padding-top: 2em;
-}
-
-.cpf, .cel{
-    width: 41.5%;
-}
-
-.cidade, .estado {
-    width: 39.6%;
-}
-
-.nascimento, .cep {
-    width: 32%;
-}
-
-.cadastro-dados, .verificaCPF{
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 1.8em;
-    font-size: .9em;
-}
-
-input {
-    border-bottom: 1px gray solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 1em;
-    color: gray;
-    padding: .24em ;
-}
-
-.checkbox {
-    margin-top: 1.2em;
-  
-}
-
-button {
-    margin: 1em auto;
-    padding: .5em 14.6em;
-    border-radius: 3em;
-    font-size: 1em;
-    font-weight: 700;
-    background-color: #3f9ad3;
-    color: white;
-    border: none
-}
-
-span {
-    font-size: .8em;
-}
