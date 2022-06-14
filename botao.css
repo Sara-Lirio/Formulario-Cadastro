@@ -1,5 +1,5 @@
 button {
-    margin: 1em auto;
+    margin: .3em 0;
     width: 100%;
     padding: .5rem 0;
     border-radius: 3em;
@@ -8,4 +8,6 @@ button {
     background-color: var(--cor-azul-botao);
     color: var(--cor-branco);
     border: none;
+    cursor: pointer;
 }
+

@@ -20,62 +20,62 @@
         </section>
         <section class="cadastro">
             <form>
-                <div id="divCadastro" class="cadastro-dados">
+                <div class="cadastro-dados">
                     <fieldset>
                         <div class="input-container">
-                            <label for="" id="nome">Nome Completo</label>
-                            <input type="text" id="nome">
+                            <input id="name" type="text"/>
+                            <label for="name">Nome Completo</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <label class="cpf" for="cpf">CPF</label>
-                            <input class='cpf' type="" id="cpf">
+                            <input id="cpf" type=""/>
+                            <label for="cpf" autocomplete="off">CPF</label>
                         </div>
                         <div class="input-container">
-                            <label class='cel' for="">Celular</label>
-                            <input class='cel' type="tel">
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div class="input-container">
-                            <label for="">Data de Nascimento</label>
-                            <input type="date" id="nascimento" class="nascimento">
-                        </div>
-                        <div class="input-container">
-                            <label for="">CEP</label>
-                            <input class="cep" type="text">
+                            <input id="celular" type="tel"/>
+                            <label for="celular">Celular</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <label for="">Endereço</label>
-                            <input type="text">
+                            <input id="nascimento" type="date"/>
+                            <label for="nascimento">Data de Nascimento</label>
+                        </div>
+                        <div class="input-container">
+                            <input id="cep" type="text"/>
+                            <label for="cep">CEP</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <label for="">Cidade</label>
-                            <input class='cidade' type="text">
-                        </div>
-                        <div class="input-container">
-                            <label for="">Estado</label>
-                            <input class='estado' type="text">
+                            <input id="endereco" type="text"/>
+                            <label for="endereco">Endereço</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <label for="" id="email">Email</label>
-                            <input type="email">
+                            <input id="cidade" type="text"/>
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="input-container">
+                            <input id="estado" type="text"/>
+                            <label for="estado">Estado</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <label for="" id="senha">Senha</label>
-                            <input type="password"
+                            <input id="email" type="email"/>
+                            <label for="email">Email</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input-container">
+                            <input id="senha" type="password"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
                                 title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
-                                data-tipo="dataNascimento">
+                                data-tipo="dataNascimento"/>
+                            <label for="senha">Senha</label>
                         </div>
                 </div>
                 <div>
@@ -87,7 +87,7 @@
                         consentimento,
                         quando aplicável, conforme descrito nesta Política de Privacidade.</legend> <br>
                 </div>
-                <button id="enviar">Cadastrar</button>
+                <button type="submit" id="enviar">Cadastrar</button>
             </form>
         </section>
     </main>

@@ -1,7 +1,11 @@
 :root {
     --fonte-principal: 'Mulish', sans-serif;
 
+    --fonte-peso-input: 300;
+
     --cor-azul-botao: #3f9ad3;
     --cor-cinza-primaria: gray;
+    --cor-cinza-claro-input-botton: rgb(167, 165, 165);
     --cor-branco: white;
+    --cor-cinza-escuro-label: rgb(73, 73, 73);
 }
