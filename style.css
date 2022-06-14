@@ -54,8 +54,8 @@ form {
     width: 39.6%;
 }
 
-.nascicmento, .cep {
-    width: 34%;
+.nascimento, .cep {
+    width: 32%;
 }
 
 .cadastro-dados, .verificaCPF{
