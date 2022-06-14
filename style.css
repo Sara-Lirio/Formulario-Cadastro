@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+.principal,
+.cadastro {
+    width: 50%;
+    
+}
+
+.principal {
+    background-image: url(./img/banking.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+h1, label, span, input, button, p{
+    font-family: 'Mulish', sans-serif
+}
+
+p{
+    color: gray;
+}
+
+h1 {
+    font-size: 2.2em;
+    width: 40%;
+    margin: 2em;
+}
+
+form {
+    margin: 1.5em 4.5em 0 6em;
+   
+}
+
+.campoCPFeCel, .campoNascimentoeCEP, .campoEndereco{
+    padding-top: 2em;
+}
+
+.cpf, .cel{
+    width: 41.5%;
+}
+
+.cidade, .estado {
+    width: 39.6%;
+}
+
+.nascicmento, .cep {
+    width: 34%;
+}
+
+.cadastro-dados, .verificaCPF{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1.8em;
+    font-size: .9em;
+}
+
+input {
+    border-bottom: 1px gray solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1em;
+    color: gray;
+    padding: .24em ;
+}
+
+.checkbox {
+    margin-top: 1.2em;
+  
+}
+
+button {
+    margin: 1em auto;
+    padding: .5em 14.6em;
+    border-radius: 3em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+span {
+    font-size: .8em;
+}
