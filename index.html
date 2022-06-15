@@ -23,13 +23,13 @@
                 <div class="cadastro-dados">
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="name" type="text" />
+                            <input class="input-form" id="name" type="text" onblur="Campo(0)" />
                             <label class="label-form" for="name">Nome Completo</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="cpf" type="text" autocomplete="off" maxlength="14"/>
+                            <input class="input-form" id="cpf" type="text" autocomplete="off" maxlength="14" onblur="Campo(1)" />
                             <label  class="label-form" for="cpf" >CPF</label>
                         </div>
                         <div class="input-container-data">
@@ -39,33 +39,33 @@
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="cep" type="text" autocomplete="off" maxlength="10" />
+                            <input class="input-form" id="cep" type="text" autocomplete="off" maxlength="10" onblur="Campo(3)" />
                             <label class="label-form" for="cep">CEP</label>
                         </div>
                         <div class="input-container">
-                            <input class="input-form" id="celular" type="tel" autocomplete="off" maxlength="14" />
+                            <input class="input-form" id="celular" type="tel" autocomplete="off" maxlength="14" onblur="Campo(4)" />
                             <label class="label-form" for="celular">Celular</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="endereco" type="text" />
+                            <input class="input-form" id="endereco" type="text"  onblur="Campo(5)" />
                             <label class="label-form" for="endereco">Endereço</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="cidade" type="text" />
+                            <input class="input-form" id="cidade" type="text" onblur="Campo(6)" />
                             <label class="label-form" for="cidade">Cidade</label>
                         </div>
                         <div class="input-container">
-                            <input class="input-form" id="estado" type="text" />
+                            <input class="input-form" id="estado" type="text" onblur="Campo(7)" />
                             <label class="label-form" for="estado">Estado</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="email" type="email" />
+                            <input class="input-form" id="email" type="email" onblur="Campo(8)" />
                             <label class="label-form" for="email">Email</label>
                         </div>
                     </fieldset>
@@ -74,19 +74,19 @@
                             <input class="input-form" id="senha" type="password"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
                                 title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
-                                data-tipo="dataNascimento" />
+                                data-tipo="dataNascimento" onblur="Campo(9)" />
                             <label class="label-form" for="senha">Senha</label>
                         </div>
                 </div>
                 <aside>
                     <div class="div-checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" class="checkbox" onblur="Campo(10)" >
                         <option>Aceito receber comunicações por WhatsApp.</option>
                     </div>
                     <div class="div-checkbox2">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" class="checkbox" onblur="Campo(11)" >
                         <p class="option-checkbox">Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu
-                            consentimento,                             quando aplicável, conforme descrito nesta Política de Privacidade.</p> <br>
+                            consentimento, quando aplicável, conforme descrito nesta Política de Privacidade.</p> <br>
                     </div>
                 </asidet>
                 <button type="submit" id="enviar">Cadastrar</button>
@@ -96,6 +96,7 @@
     <script src="./mascaraCPF.js"></script>
 <script src="./mascaraCEP.js"></script>
 <script src="./mascaraCelular.js"></script>
+<script src="./float-label.js"></script>
 </body>
 
 </html>
