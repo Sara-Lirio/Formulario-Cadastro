@@ -77,14 +77,22 @@
                                 data-tipo="dataNascimento" onblur="Campo(9)" />
                             <label class="label-form" for="senha">Senha</label>
                         </div>
+                        <div class="input-container">
+                            <input class="input-form" id="confirma-senha" type="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
+                                title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
+                                data-tipo="dataNascimento" onblur="Campo(10)" />
+                            <label class="label-form" for="confirma-senha">Confirmação Senha</label>
+                        </div>
+                    </fieldset>
                 </div>
                 <aside>
                     <div class="div-checkbox">
-                        <input type="checkbox" class="checkbox" onblur="Campo(10)" >
+                        <input type="checkbox" class="checkbox" onblur="Campo(11)" >
                         <option>Aceito receber comunicações por WhatsApp.</option>
                     </div>
                     <div class="div-checkbox2">
-                        <input type="checkbox" class="checkbox" onblur="Campo(11)" >
+                        <input type="checkbox" class="checkbox" onblur="Campo(12)" >
                         <p class="option-checkbox">Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu
                             consentimento, quando aplicável, conforme descrito nesta Política de Privacidade.</p> <br>
                     </div>

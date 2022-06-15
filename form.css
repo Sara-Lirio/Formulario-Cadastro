@@ -64,9 +64,9 @@ form {
 }
 
 .input-form:focus + .label-form {
-    font-size: .85em;
-    top: -25px;
-    color: var(--cor-azul-botao)
+    font-size: .85em !important;
+    top: -25px !important;
+    color: var(--cor-azul-botao) !important;
 }
 
 .div-checkbox{
