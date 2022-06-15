@@ -5,7 +5,7 @@ fieldset {
 }
 
 form {
-    margin: 1em 0 0 4em;
+    margin: 2em 0 0 4em;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -14,15 +14,35 @@ form {
     width: 32rem;
 }
 
-label {
+.label-form {
     font-size: 1.05em;
     font-weight: 500;
     position: absolute;
     top: -5px;
     left: 6px;
     color: var(--cor-cinza-escuro-label);
-    transition: .3;
+    transition: .3s;
 }
+
+.label-data{
+    color: var(--cor-cinza-escuro-label);
+    font-size: .9em;
+    transition: .3s;
+    top: -18px;
+    position: absolute;
+}
+
+.input-container-data {
+    margin-top: .347em;
+    position: relative;
+    width: 100%;
+}
+
+.input-data:focus + .label-data {
+    font-size: .85em;
+    color: var(--cor-azul-botao)
+}
+
 
 .input-container{
     position:relative;
@@ -30,13 +50,12 @@ label {
     margin: .5em;
 }
 
-input {
+.input-form, .input-data {
     border-bottom: 1.3px var( --cor-cinza-claro-input-botton) solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    padding: 0 0 2px 16px;
-    padding-left: 5px;
+    padding: 0 0 2px 8px;
     font-size: .9em;
     color: var(--cor-cinza-primaria);
     width: 100%;
@@ -44,16 +63,34 @@ input {
     
 }
 
-input:focus + label {
+.input-form:focus + .label-form {
     font-size: .85em;
     top: -25px;
     color: var(--cor-azul-botao)
 }
 
-.checkbox {
-    margin-top: 1.2em;
+.div-checkbox{
+    display: flex;
+    margin-bottom: 1em;
 }
 
-legend {
-    font-size: 0.9em;
+.checkbox{
+   width: 3em;
+   margin-bottom: 1em;
 }
+
+option {
+    margin-left: .1em;
+    margin-top: -3px;
+}
+
+.option-checkbox {
+    margin-top: -30px;
+    margin-left: 2.8em
+}
+
+aside {
+    font-size: 0.9em;
+    
+}
+

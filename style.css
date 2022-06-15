@@ -22,7 +22,7 @@ main {
     background-size: cover;
 }
 
-h1, label, legend, input, button, p{
+h1, label, aside, input, button{
     font-family: var(--fonte-principal);
 }
 
