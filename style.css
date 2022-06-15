@@ -32,4 +32,8 @@ h1 {
     margin: 2em;
 }
 
-
+p {
+    font-family: var(--fonte-principal) !important;
+    color: var(--cor-azul-botao) !important;
+    font-size: .75em !important;
+}

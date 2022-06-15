@@ -19,18 +19,20 @@
             <h1>Complete os campos ao lado para pedir sua Conta e Cartão de crédito</h1>
         </section>
         <section class="cadastro">
-            <form>
+            <form name='formulario' action="#" onsubmit="valida()">
                 <div class="cadastro-dados">
                     <fieldset>
                         <div class="input-container">
                             <input class="input-form" id="name" type="text" onblur="Campo(0)" />
-                            <label class="label-form" for="name">Nome Completo</label>
+                            <label class="label-form" id="label-name" for="name">Nome Completo</label>
+                            <p id="notificacaoNome"></p>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="cpf" type="text" autocomplete="off" maxlength="14" onblur="Campo(1)" />
-                            <label  class="label-form" for="cpf" >CPF</label>
+                            <input class="input-form" name='cpf' id="cpf" type="text" autocomplete="off" maxlength="14" onblur="Campo(1)" required/>
+                            <label  class="label-form" id="label-cpf" for="cpf" >CPF</label>
+                            <p id="notificacaoCPF"></p>
                         </div>
                         <div class="input-container-data">
                             <label class="label-data" for="nascimento">Data de Nascimento</label>
@@ -40,11 +42,11 @@
                     <fieldset>
                         <div class="input-container">
                             <input class="input-form" id="cep" type="text" autocomplete="off" maxlength="10" onblur="Campo(3)" />
-                            <label class="label-form" for="cep">CEP</label>
+                            <label class="label-form" id="label-cep" for="cep">CEP</label>
                         </div>
                         <div class="input-container">
                             <input class="input-form" id="celular" type="tel" autocomplete="off" maxlength="14" onblur="Campo(4)" />
-                            <label class="label-form" for="celular">Celular</label>
+                            <label class="label-form" id="label-celular" for="celular">Celular</label>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -97,14 +99,15 @@
                             consentimento, quando aplicável, conforme descrito nesta Política de Privacidade.</p> <br>
                     </div>
                 </asidet>
-                <button type="submit" id="enviar">Cadastrar</button>
+                <button type="submit" id="submit" onclick="cadastrar()">Cadastrar</button>
             </form>
         </section>
     </main>
     <script src="./mascaraCPF.js"></script>
 <script src="./mascaraCEP.js"></script>
 <script src="./mascaraCelular.js"></script>
-<script src="./float-label.js"></script>
+<script src="./validacaoCPF.js"></script>
+<script src="./main.js"></script>
 </body>
 
 </html>
