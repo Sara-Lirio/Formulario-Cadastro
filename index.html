@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./_variaveis.css">
-    <link rel="stylesheet" href="./botao.css">
-    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/_variaveis.css">
+    <link rel="stylesheet" href="./css/botao.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
     <title>Cadastro</title>
 
 </head>
@@ -16,59 +17,65 @@
 <body>
     <main>
         <section class="principal">
-            <h1>Complete os campos ao lado para pedir sua Conta e Cartão de crédito</h1>
+            <h1>Complete os campos ao lado para pedir sua Conta e Cartão de Crédito</h1>
+            <h3>Complete os campos abaixo para pedir sua Conta e Cartão de Crédito</h3>
         </section>
         <section class="cadastro">
-            <form name='formulario' action="#" onsubmit="valida()">
+            <form name='formulario' action="#" id="formCadastro">
                 <div class="cadastro-dados">
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="name" type="text" onblur="Campo(0)" />
+                            <input class="input-form" id="nome" type="text" onblur="Campo(0)"/>
                             <label class="label-form" id="label-name" for="name">Nome Completo</label>
-                            <p id="notificacaoNome"></p>
+                            <h2 id="notificacaoNome"></h2>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" name='cpf' id="cpf" type="text" autocomplete="off" maxlength="14" onblur="Campo(1)" required/>
-                            <label  class="label-form" id="label-cpf" for="cpf" >CPF</label>
-                            <p id="notificacaoCPF"></p>
+                            <input class="input-form" name='cpf' id="cpf" type="text" autocomplete="off" maxlength="14"
+                                onblur="Campo(1)" required />
+                            <label class="label-form" id="label-cpf" for="cpf">CPF</label>
+                            <h2 id="notificacaoCPF"></h2>
                         </div>
                         <div class="input-container-data">
-                            <label class="label-data" for="nascimento">Data de Nascimento</label>
-                            <input id="nascimento" class="input-data" type="date" />
+                            <label class="label-data" id="data" for="nascimento">Data de Nascimento</label>
+                            <input id="nascimento" class="input-data" type="date" required />
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="cep" type="text" autocomplete="off" maxlength="10" onblur="Campo(3)" />
+                            <input class="input-form" id="cep" type="text" autocomplete="off" maxlength="10"
+                                onblur="Campo(3)" />
                             <label class="label-form" id="label-cep" for="cep">CEP</label>
+                            <h2 id="notificacaoCEP"></h2>
+                            <h2 id="notificacaoCEPInv"></h2>
                         </div>
                         <div class="input-container">
-                            <input class="input-form" id="celular" type="tel" autocomplete="off" maxlength="14" onblur="Campo(4)" />
+                            <input class="input-form" id="celular" type="tel" autocomplete="off" maxlength="14"
+                                onblur="Campo(4)" />
                             <label class="label-form" id="label-celular" for="celular">Celular</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
-                            <input class="input-form" id="endereco" type="text"  onblur="Campo(5)" />
-                            <label class="label-form" for="endereco">Endereço</label>
+                            <input class="input-form" id="endereco" type="text" onblur="Campo(5)" />
+                            <label class="label-form" id="label-endereco" for="endereco">Endereço</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
                             <input class="input-form" id="cidade" type="text" onblur="Campo(6)" />
-                            <label class="label-form" for="cidade">Cidade</label>
+                            <label class="label-form" id="label-cidade" for="cidade">Cidade</label>
                         </div>
                         <div class="input-container">
                             <input class="input-form" id="estado" type="text" onblur="Campo(7)" />
-                            <label class="label-form" for="estado">Estado</label>
+                            <label class="label-form" id="label-estado" for="estado">Estado</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div class="input-container">
                             <input class="input-form" id="email" type="email" onblur="Campo(8)" />
-                            <label class="label-form" for="email">Email</label>
+                            <label class="label-form" id="label-email" for="email">Email</label>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -77,37 +84,42 @@
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
                                 title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
                                 data-tipo="dataNascimento" onblur="Campo(9)" />
-                            <label class="label-form" for="senha">Senha</label>
+                            <label id="label-senha" class="label-form" for="senha">Senha</label>
                         </div>
                         <div class="input-container">
                             <input class="input-form" id="confirma-senha" type="password"
                                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=*-]).{6,12}$"
                                 title='A senha deve conter de 6 a 12 caracteres. Pelo menos uma letra maiuscula e um número. Não utilize !@#$%^&*_=*-'
                                 data-tipo="dataNascimento" onblur="Campo(10)" />
-                            <label class="label-form" for="confirma-senha">Confirmação Senha</label>
+                            <label id="label-confirma-senha" class="label-form" for="confirma-senha">Confirmação Senha</label>
                         </div>
                     </fieldset>
                 </div>
                 <aside>
                     <div class="div-checkbox">
-                        <input type="checkbox" class="checkbox" onblur="Campo(11)" >
+                        <input type="checkbox" class="checkbox" onblur="Campo(11)">
                         <option>Aceito receber comunicações por WhatsApp.</option>
                     </div>
                     <div class="div-checkbox2">
-                        <input type="checkbox" class="checkbox" onblur="Campo(12)" >
-                        <p class="option-checkbox">Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu
+                        <input type="checkbox" class="checkbox" onblur="Campo(12)">
+                        <p class="option-checkbox">Eu li, estou ciente das condições de tratamento dos meus dados
+                            pessoais e dou meu
                             consentimento, quando aplicável, conforme descrito nesta Política de Privacidade.</p> <br>
                     </div>
-                </asidet>
-                <button type="submit" id="submit" onclick="cadastrar()">Cadastrar</button>
+                    </asidet>
+                    <button type="submit" id="submit" onclick="cadastrar()">Cadastrar</button>
             </form>
         </section>
     </main>
-    <script src="./mascaraCPF.js"></script>
-<script src="./mascaraCEP.js"></script>
-<script src="./mascaraCelular.js"></script>
-<script src="./validacaoCPF.js"></script>
-<script src="./main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/views/mascaras.js"></script>
+
+    <script src="./js/controllers/cadastro.js"></script>
+    <script src="./js/models/cadastro.js"></script>
+    <script src="./js/views/cadastro-view.js"></script>
+
 </body>
 
 </html>
