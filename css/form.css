@@ -38,12 +38,6 @@ form {
     width: 100%;
 }
 
-.input-data:focus + .label-data {
-    font-size: .85em;
-    color: var(--cor-azul-botao)
-}
-
-
 .input-container{
     position:relative;
     width: 100%;

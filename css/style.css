@@ -17,23 +17,27 @@ main {
 }
 
 .principal {
-    background-image: url(./img/banking.jpg);
+    background-image: url(../img/banking.jpg);
     height: 100vh;
     background-size: cover;
 }
 
-h1, label, aside, input, button{
+h1, label, aside, input, button, h3{
     font-family: var(--fonte-principal);
 }
 
-h1 {
+h1, h3 {
     font-size: 2.2em;
     width: 40%;
     margin: 2em;
 }
 
-p {
+h2 {
     font-family: var(--fonte-principal) !important;
     color: var(--cor-azul-botao) !important;
     font-size: .75em !important;
+}
+
+h3 {
+    display: none;
 }
