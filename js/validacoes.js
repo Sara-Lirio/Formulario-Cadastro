@@ -154,3 +154,99 @@ confirmaSenha.addEventListener('blur', () => {
         labelConfirmaSenha.style.color = '#3f9ad3';
     }
 })
+
+cep.addEventListener('change', () => {
+    if(endereco.value.length > 0 && endereco.value.length < 1) {
+        labelEnd.style.fontSize = '.85em';
+        labelEnd.style.top = '-25px'
+        labelEnd.style.color = '#494949';
+    } else if (endereco.value.length < 0){
+        labelEnd.style.fontSize = '1.05em';
+        labelEnd.style.top = '-5px'
+        labelEnd.style.color = '#494949';
+    } else {
+        labelEnd.style.fontSize = '.85em';
+        labelEnd.style.top = '-25px'
+        labelEnd.style.color = '#494949';
+    }
+})
+
+cep.addEventListener('change', () => {
+    if(cidade.value.length > 0 && cidade.value.length < 1) {
+        labelCidade.style.fontSize = '.85em';
+        labelCidade.style.top = '-25px'
+        labelCidade.style.color = '#494949';
+    } else if (cidade.value.length < 0){
+        labelCidade.style.fontSize = '1.05em';
+        labelCidade.style.top = '-5px'
+        labelCidade.style.color = '#494949';
+    } else {
+        labelCidade.style.fontSize = '.85em';
+        labelCidade.style.top = '-25px'
+        labelCidade.style.color = '#494949';
+    }
+})
+
+cep.addEventListener('change', () => {
+    if(estado.value.length > 0 && estado.value.length < 1) {
+        labelEstado.style.fontSize = '.85em';
+        labelEstado.style.top = '-25px'
+        labelEstado.style.color = '#494949';
+    } else if (estado.value.length < 0){
+        labelEstado.style.fontSize = '1.05em';
+        labelEstado.style.top = '-5px'
+        labelEstado.style.color = '#494949';
+    } else {
+        labelEstado.style.fontSize = '.85em';
+        labelEstado.style.top = '-25px'
+        labelEstado.style.color = '#494949';
+    }
+})
+
+endereco.addEventListener('blur', () => {
+    if(endereco.value.length > 0 && endereco.value.length < 1) {
+        labelEnd.style.fontSize = '.85em';
+        labelEnd.style.top = '-25px'
+        labelEnd.style.color = '#494949';
+    } else if (endereco.value.length <= 0){
+        labelEnd.style.fontSize = '1.05em';
+        labelEnd.style.top = '-5px'
+        labelEnd.style.color = '#494949';
+    } else {
+        labelEnd.style.fontSize = '.85em';
+        labelEnd.style.top = '-25px'
+        labelEnd.style.color = '#494949';
+    }
+})
+
+cidade.addEventListener('blur', () => {
+    if(cidade.value.length > 0 && cidade.value.length < 1) {
+        labelCidade.style.fontSize = '.85em';
+        labelCidade.style.top = '-25px'
+        labelCidade.style.color = '#494949';
+    } else if (cidade.value.length <= 0){
+        labelCidade.style.fontSize = '1.05em';
+        labelCidade.style.top = '-5px'
+        labelCidade.style.color = '#494949';
+    } else {
+        labelCidade.style.fontSize = '.85em';
+        labelCidade.style.top = '-25px'
+        labelCidade.style.color = '#494949';
+    }
+})
+
+estado.addEventListener('blur', () => {
+    if(estado.value.length > 0 && estado.value.length < 1) {
+        labelEstado.style.fontSize = '.85em';
+        labelEstado.style.top = '-25px'
+        labelEstado.style.color = '#494949';
+    } else if (estado.value.length <= 0){
+        labelEstado.style.fontSize = '1.05em';
+        labelEstado.style.top = '-5px'
+        labelEstado.style.color = '#494949';
+    } else {
+        labelEstado.style.fontSize = '.85em';
+        labelEstado.style.top = '-25px'
+        labelEstado.style.color = '#494949';
+    }
+})
