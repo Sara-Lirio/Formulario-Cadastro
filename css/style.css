@@ -23,7 +23,7 @@ main {
 }
 
 h1, label, aside, input, button, h3{
-    font-family: var(--fonte-principal);
+    font-family:'Mulish', sans-serif;
 }
 
 h1, h3 {
@@ -33,7 +33,7 @@ h1, h3 {
 }
 
 h2 {
-    font-family: var(--fonte-principal) !important;
+    font-family: 'Mulish', sans-serif !important;
     color: var(--cor-azul-botao) !important;
     font-size: .75em !important;
 }
@@ -41,3 +41,6 @@ h2 {
 h3 {
     display: none;
 }
+
+
+
