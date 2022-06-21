@@ -20,12 +20,12 @@ form {
     position: absolute;
     top: -5px;
     left: 6px;
-    color: var(--cor-cinza-escuro-label);
+    color: #494949;
     transition: .3s;
 }
 
 .label-data{
-    color: var(--cor-cinza-escuro-label);
+    color: #494949;
     font-size: .9em;
     transition: .3s;
     top: -18px;
@@ -45,13 +45,13 @@ form {
 }
 
 .input-form, .input-data {
-    border-bottom: 1.3px var( --cor-cinza-claro-input-botton) solid;
+    border-bottom: 1.3px rgb(167, 165, 165) solid;
     border-top: none;
     border-left: none;
     border-right: none;
     padding: 0 0 2px 8px;
     font-size: .9em;
-    color: var(--cor-cinza-primaria);
+    color: gray;
     width: 100%;
     outline:none
     
@@ -60,7 +60,7 @@ form {
 .input-form:focus + .label-form {
     font-size: .85em !important;
     top: -25px !important;
-    color: var(--cor-azul-botao) !important;
+    color: #3f9ad3 !important;
 }
 
 .div-checkbox{
